@@ -1,0 +1,71 @@
+<div class="app">
+
+	<div class="nav">
+
+		<a *ngFor="let item of nav" [routerLink]="item.link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: item.exact}">
+			{{item.name}}
+		</a>
+	</div>
+
+	<router-outlet></router-outlet>
+	<!--<h1 [innerHTML]="title + '!'"></h1>
+<section>
+	{{numberOne + numberTwo}}
+</section>
+<section>
+	{{isHappy ? ':)' : ':('}}
+</section>
+<section>
+	<img [src]="logo" alt="">
+</section>
+<section>
+	&lt;!&ndash; OLD CODE for use with FormsModule
+	<button (click)="handleClick()">Change Name</button>
+	&lt;!&ndash;Can do this&ndash;&gt;
+	<input type="text" [ngModel]="name" (ngModelChange)="handleChange($event)">
+	&lt;!&ndash;or this shorter version cuz () inside [] tracks events&ndash;&gt;
+	<input type="text" [(ngModel)]="name">
+	{{name}}
+	&ndash;&gt;
+
+	<button (click)="handleClick(username.value)">Get Value</button>
+	<input type="text" [value]="name" (input)="handleChange($event.target.value)">
+
+	<div *ngIf="name.length > 2">
+		Searching for... {{name}}
+	</div>
+</section>-->
+
+	<!--<h3>Passengers</h3>
+	<ul>
+		<template ngFor let-p let-i="index" [ngForOf]="passengers">
+			<li>
+				{{i}} - {{p.fullname}}
+			</li>
+		</template>
+	</ul>-->
+
+	<!--<h3>Passengers</h3>
+	<ul>
+		<li *ngFor="let p of passengers; let i = index;">
+			<span class="status" [class.checked-in]="p.checkedIn"></span>
+			{{i}} - {{p.fullname}}
+		</li>
+	</ul>-->
+
+	<!--<h3>Passengers</h3>
+	<ul>
+		<li *ngFor="let p of passengers; let i = index;">
+			<span class="status" [style.backgroundColor]="p.checkedIn ? 'forestgreen' : 'darkred'"></span>
+			{{i}} - {{p.fullname}}
+		</li>
+	</ul>
+
+	<h3>Passengers</h3>
+	<ul>
+		<li *ngFor="let p of passengers; let i = index;">
+			<span class="status" [ngStyle]="{backgroundColor: p.checkedIn ? 'forestgreen' : 'darkred'}"></span>
+			{{i}} - {{p.fullname}}
+		</li>
+	</ul>-->
+</div>

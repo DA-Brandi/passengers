@@ -1,0 +1,29 @@
+{
+  "passengers": [
+    {
+      "fullname": "Bruce Wayne",
+      "id": 1,
+      "checkedIn": true,
+      "baggage": "none"
+    },
+    {
+      "fullname": "Clark Kent SM",
+      "id": 2,
+      "checkedIn": false,
+      "baggage": "hold-only"
+    },
+    {
+      "id": 3,
+      "fullname": "Bruce Banner Hulk",
+      "checkedIn": false,
+      "baggage": "none"
+    },
+    {
+      "id": 4,
+      "fullname": "Groot",
+      "checkedIn": true,
+      "checkedInDate": 1490742000010,
+      "baggage": "none"
+    }
+  ]
+}
